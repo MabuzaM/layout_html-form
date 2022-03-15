@@ -15,128 +15,174 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
       <fieldset class="field-group">
         <legend>Personal information</legend>
-        <label for="surname">Surname:
-          <input class="form-controls"
+        <label for="surname">
+          Surname:
+        </label>
+        <input
+          class="form-controls"
           type="text"
           autocomplete="off"
           name="surname"
           minlength="2"
           maxlength="30"
+          id="surname"
           required
-          >
-        </label> <br>
-        <label for="name">Name:
-          <input class="form-controls"
+        ><br>
+        <label for="name">
+          Name:
+        </label>
+        <input
+          class="form-controls"
           type="text"
           autocomplete="off"
           name="name"
           minlength="2"
           maxlength="30"
+          id="name"
           required>
-        </label> <br>
-        <label for="age">How old are You?
-          <input
+        <br>
+        <label for="age">
+          How old are You?
+        </label>
+        <input
           class="form-controls"
           type="number"
           value="12"
           min="1"
           max="100"
           name="age"
+          id="age"
           required>
-        </label> <br>
-        <label for="dob">Full date of birth:
-          <input
+        <br>
+        <label for="dob">
+          Full date of birth:
+        </label>
+        <input
           class="form-controls"
-          type="date" name="dob"
+          type="date"
+          name="dob"
+          id="dob"
           required>
-        </label> <br>
-        <label for="terms">I accept the term of the agreement
-          <input
+        <br>
+        <label for="terms">
+          I accept the term of the agreement
+        </label>
+        <input
           type="checkbox"
           name="terms"
+          id="terms"
           required>
-        </label>
       </fieldset>
 
       <fieldset class="field-group">
         <legend>Registration</legend>
-        <label for="email">E-mail:
-          <input class="form-controls"
+        <label for="email">
+          E-mail:
+        </label>
+        <input
+          class="form-controls"
           type="email"
           placeholder="email@example.com"
           name="email"
+          id="email"
           required>
-        </label><br>
-        <label for="password">Password:
-          <input
+        <br>
+        <label for="password">
+          Password:
+        </label>
+        <input
           type="password"
           name="password"
           minlength="8"
+          id="password"
           required
-          >
-        </label>
+        >
       </fieldset>
 
       <fieldset class="field-group">
         <legend>An interesting fact about you!</legend>
-        <label for="fact">Do you love cats?
-          <label for="yes">
-            <input
+        <label for="fact">
+          Do you love cats?
+        </label>
+        <input
           class="form-controls"
           type="radio"
           name="yes"
-          value="yes"> Yes
-          </label>
-          <label for="no">
-            <input class="form-controls"
+          id="yes"
+          value="yes">
+        <label for="yes">
+          Yes
+        </label>
+        <input
+          class="form-controls"
           type="radio"
           name="no"
+          id="no"
           value="no"
-          > No
-          </label>
-        </label><br>
+        >
+        <label for="no">
+          No
+        </label>
+        <br>
 
-        <label for="color">What is your favorite color? <input class="form-controls" type="color"></label><br>
-        <label for="time">What time do you go to bed? <input class="form-controls" type="time"> </label><br>
-        <label for="cars">What are your favorite brand of cars?
-          <select
+        <label for="color">
+          What is your favorite color?
+        </label>
+        <input class="form-controls" type="color" id="color"><br>
+
+        <label for="time">
+          What time do you go to bed?
+        </label>
+        <input class="form-controls" type="time" id="time"> <br>
+
+        <label for="cars">
+          What are your favorite brand of cars?
+        </label>
+        <select
           name="cars"
           id="cars"
           multiple
           class="form-controls">
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
-          </select>
-        </label><br>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+        <br>
 
-        <label for="rating">How do you rate our work?
-          <input
+        <label for="rating">
+          How do you rate our work?
+        </label>
+        <input
           type="range"
           name="range"
           value="0"
+          id="rating"
           class="select-margin-top">
-        </label><br>
+        <br>
       </fieldset>
 
       <fieldset class="field-group">
         <legend>Additional info:</legend>
-        <label for="comment">Comments:
-          <textarea
+        <label for="comment">
+          Comments:
+        </label>
+        <textarea
           name="comment"
           id="comment"
           cols="20"
           rows="2"
-         >
-          </textarea>
-        </label><br>
+        >
+        </textarea>
+        <br>
 
-        <label for="recommendation">Would you recommend us?
-          <select name="recommendation" id="recommendation" class="select-margin-top">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-          </select>
-        </label><br>
+        <label for="recommendation">
+          Would you recommend us?
+        </label>
+        <select name="recommendation" id="recommendation" class="select-margin-top">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+        <br>
       </fieldset>
       <label for="submit"><input type="submit" name="submit"></label>
     </form>

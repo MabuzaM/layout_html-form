@@ -1,13 +1,8 @@
 /* styles go here */
 .form-controls {
-  display: inline-block;
   margin-bottom: 10px;
 }
 
 .field-group {
   margin-bottom: 20px;
-}
-
-.select-margin-top {
-  margin-top: 10px;
 }

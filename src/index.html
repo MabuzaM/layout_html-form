@@ -15,55 +15,58 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
       <fieldset class="field-group">
         <legend>Personal information</legend>
-        <label for="surname">
-          Surname:
-        </label>
-        <input
-          class="form-controls"
-          type="text"
-          autocomplete="off"
-          name="surname"
-          minlength="2"
-          maxlength="30"
-          id="surname"
-          required
-        ><br>
-        <label for="name">
-          Name:
-        </label>
-        <input
-          class="form-controls"
-          type="text"
-          autocomplete="off"
-          name="name"
-          minlength="2"
-          maxlength="30"
-          id="name"
-          required>
-        <br>
-        <label for="age">
-          How old are You?
-        </label>
-        <input
-          class="form-controls"
-          type="number"
-          value="12"
-          min="1"
-          max="100"
-          name="age"
-          id="age"
-          required>
-        <br>
-        <label for="dob">
-          Full date of birth:
-        </label>
-        <input
-          class="form-controls"
-          type="date"
-          name="dob"
-          id="dob"
-          required>
-        <br>
+        <div class="form-controls">
+          <label for="surname">
+            Surname:
+          </label>
+          <input
+            type="text"
+            autocomplete="off"
+            name="surname"
+            minlength="2"
+            maxlength="30"
+            id="surname"
+            required
+          >
+        </div>
+        <div class="form-controls">
+          <label for="name">
+            Name:
+          </label>
+          <input
+            type="text"
+            autocomplete="off"
+            name="name"
+            minlength="2"
+            maxlength="30"
+            id="name"
+            required>
+        </div>
+
+        <div class="form-controls">
+          <label for="age">
+            How old are You?
+          </label>
+          <input
+            type="number"
+            value="12"
+            min="1"
+            max="100"
+            name="age"
+            id="age"
+            required>
+        </div>
+
+        <div class="form-controls">
+          <label for="dob">
+            Full date of birth:
+          </label>
+          <input
+            type="date"
+            name="dob"
+            id="dob"
+            required>
+        </div>
         <label for="terms">
           I accept the term of the agreement
         </label>
@@ -76,17 +79,18 @@
 
       <fieldset class="field-group">
         <legend>Registration</legend>
-        <label for="email">
-          E-mail:
-        </label>
-        <input
-          class="form-controls"
-          type="email"
-          placeholder="email@example.com"
-          name="email"
-          id="email"
-          required>
-        <br>
+        <div class="form-controls">
+          <label for="email">
+            E-mail:
+          </label>
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+            id="email"
+            required>
+        </div>
+
         <label for="password">
           Password:
         </label>
@@ -139,7 +143,8 @@
           </label>
           <input
             type="time"
-            id="time">
+            id="time"
+            step="1">
         </div>
 
         <div class="form-controls">
@@ -151,12 +156,11 @@
             id="cars"
             multiple
           >
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
           </select>
         </div>
-
 
         <label for="rating">
           How do you rate our work?
@@ -167,7 +171,6 @@
           value="0"
           id="rating"
         >
-      </div>
       </fieldset>
 
       <fieldset class="field-group">
@@ -194,9 +197,8 @@
           <option value="yes">yes</option>
           <option value="no">no</option>
         </select>
-
       </fieldset>
-      <label for="submit"><input type="submit" name="submit"></label>
+      <button type="submit" name="submit">Submit</button>
     </form>
 
     <script type="text/javascript" src="./main.js"></script>

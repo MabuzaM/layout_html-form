@@ -15,10 +15,9 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
       <fieldset class="field-group">
         <legend>Personal information</legend>
-        <div class="form-controls">
-          <label for="surname">
-            Surname:
-          </label>
+
+        <label for="surname" class="form-controls">
+          Surname:
           <input
             type="text"
             autocomplete="off"
@@ -28,11 +27,10 @@
             id="surname"
             required
           >
-        </div>
-        <div class="form-controls">
-          <label for="name">
-            Name:
-          </label>
+        </label>
+
+        <label for="name" class="form-controls">
+          Name:
           <input
             type="text"
             autocomplete="off"
@@ -40,13 +38,12 @@
             minlength="2"
             maxlength="30"
             id="name"
-            required>
-        </div>
+            required
+          >
+        </label>
 
-        <div class="form-controls">
-          <label for="age">
-            How old are You?
-          </label>
+        <label for="age" class="form-controls">
+          How old are You?
           <input
             type="number"
             value="12"
@@ -54,61 +51,59 @@
             max="100"
             name="age"
             id="age"
-            required>
-        </div>
+            required
+          >
+        </label>
 
-        <div class="form-controls">
-          <label for="dob">
-            Full date of birth:
-          </label>
+        <label for="dob" class="form-controls">
+          Full date of birth:
           <input
             type="date"
             name="dob"
             id="dob"
-            required>
-        </div>
+            required
+          >
+        </label>
+
         <label for="terms">
           I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="terms"
+            id="terms"
+            required>
         </label>
-        <input
-          type="checkbox"
-          name="terms"
-          id="terms"
-          required>
       </fieldset>
 
       <fieldset class="field-group">
         <legend>Registration</legend>
-        <div class="form-controls">
-          <label for="email">
-            E-mail:
-          </label>
+        <label for="email" class="form-controls">
+          E-mail:
           <input
             type="email"
             placeholder="email@example.com"
             name="email"
             id="email"
-            required>
-        </div>
+            required
+          >
+        </label>
 
         <label for="password">
           Password:
+          <input
+            type="password"
+            name="password"
+            minlength="8"
+            id="password"
+            required
+          >
         </label>
-        <input
-          type="password"
-          name="password"
-          minlength="8"
-          id="password"
-          required
-        >
       </fieldset>
 
       <fieldset class="field-group">
         <legend>An interesting fact about you!</legend>
-        <div class="form-controls">
-          <label for="fact">
-            Do you love cats?
-          </label>
+        <label for="fact" class="form-controls">
+          Do you love cats?
           <input
             type="radio"
             name="yes"
@@ -126,31 +121,27 @@
           <label for="no">
             No
           </label>
-        </div>
+        </label>
 
-        <div class="form-controls">
-          <label for="color">
-            What is your favorite color?
-          </label>
+        <label for="color" class="form-controls">
+          What is your favorite color?
           <input
             type="color"
-            id="color">
-        </div>
+            id="color"
+          >
+        </label>
 
-        <div class="form-controls">
-          <label for="time">
-            What time do you go to bed?
-          </label>
+        <label for="time" class="form-controls">
+          What time do you go to bed?
           <input
             type="time"
             id="time"
-            step="1">
-        </div>
+            step="1"
+          >
+        </label>
 
-        <div class="form-controls">
-          <label for="cars">
-            What are your favorite brand of cars?
-          </label>
+        <label for="cars" class="form-controls">
+          What are your favorite brand of cars?
           <select
             name="cars"
             id="cars"
@@ -160,25 +151,23 @@
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
-        </div>
+        </label>
 
         <label for="rating">
           How do you rate our work?
+          <input
+            type="range"
+            name="range"
+            value="0"
+            id="rating"
+          >
         </label>
-        <input
-          type="range"
-          name="range"
-          value="0"
-          id="rating"
-        >
       </fieldset>
 
       <fieldset class="field-group">
         <legend>Additional info:</legend>
-        <div class="form-controls">
-          <label for="comment">
-            Comments:
-          </label>
+        <label for="comment" class="form-controls">
+          Comments:
           <textarea
             name="comment"
             id="comment"
@@ -186,7 +175,7 @@
             rows="2"
           >
           </textarea>
-        </div>
+        </label>
         <label for="recommend">
           Would you recommend us?
         </label>
